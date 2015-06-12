@@ -42,8 +42,8 @@ var StatesField = React.createClass({
 			selectValue: null
 		});
 	},
-	updateValue: function(newValue) {
-		logChange('State changed to ' + newValue);
+	updateValue: function(newValue,_Any,name) {
+		logChange('State changed to ' + newValue + ' with Select Name ' + name);
 		this.setState({
 			selectValue: newValue || null
 		});
